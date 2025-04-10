@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>서희의 블로그</title>
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/layout.css" />
+  <link rel="stylesheet" href="styles/header.css" />
+  <link rel="stylesheet" href="styles/sidebar.css" />
+  <link rel="stylesheet" href="styles/title.css" />
+  <link rel="stylesheet" href="styles/top-grid.css" />
+  <link rel="stylesheet" href="styles/card.css" />
+  <link rel="stylesheet" href="styles/masonry.css" />
+  <link rel="stylesheet" href="styles/banner.css" />
+  <link rel="stylesheet" href="styles/footer.css" />
+  <style>html { scroll-behavior: smooth; }</style>
+</head>
+<body>
+
+  <!-- ✅ 헤더 -->
+  <header class="header">
+    <img src="assets/images/logo.png" alt="로고" class="header__logo" />
+    <h1 class="header__title">서희의 블로그</h1>
+    <img src="assets/images/menu.svg" alt="메뉴" class="header__menu" />
+  </header>
+
+  <!-- ✅ 사이드 네비게이션 -->
+  <aside class="sidebar">
+    <nav class="category">
+      <h2 class="category__title">분류</h2>
+      <ul class="category__list">
+        <li><a href="#section-all" class="category__btn top">전체</a></li>
+        <li><a href="#section-food" class="category__btn">식당</a></li>
+        <li><a href="#section-cafe" class="category__btn bottom">카페</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- ✅ 인삿말 -->
+  <section class="intro">
+    <h2 class="intro__title">안녕하세요, 서희의 블로그입니다 😊</h2>
+    <p class="intro__desc">제가 다녀온 맛집과 카페들을 추천해드릴게요!</p>
+  </section>
+
+<!-- ✅ 홈 상단 섹션 -->
+<div class="top-grid-wrapper">
+  <section class="top-grid">
+    <div class="item item1"><img src="assets/images/top1.jpg" alt="top1" /></div>
+    <div class="item item2"><img src="assets/images/top2.jpg" alt="top2" /></div>
+    <div class="item item3"><img src="assets/images/top3.jpg" alt="top3" /></div>
+    <div class="item item4"><img src="assets/images/top4.jpg" alt="top4" /></div>
+    <div class="item item5"><img src="assets/images/top5.jpg" alt="top5" /></div>
+  </section>
+</div>
+
+    
+    <!-- 전체 섹션 -->
+    <h2 id="section-all" class="section__title">전체</h2>
+    <section class="cards">
+      <!-- 식당 5개 -->
+      <div class="card"><img src="assets/images/restaurant1.jpg" alt="야상해" class="card__image" />
+        <p class="card__title">야상해<br />좋아요 7개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/restaurant2.jpg" alt="나리의집" class="card__image" />
+        <p class="card__title">나리의집<br />좋아요 9개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/restaurant3.jpg" alt="이가네양꼬치 성수직영점" class="card__image" />
+        <p class="card__title">이가네양꼬치 성수직영점<br />좋아요 12개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/restaurant4.jpg" alt="미아사거리 원조할매곱창" class="card__image" />
+        <p class="card__title">미아사거리 원조할매곱창<br />좋아요 8개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/restaurant5.jpg" alt="용산 삼계탕" class="card__image" />
+        <p class="card__title">용산 삼계탕<br />좋아요 10개</p><button class="card__like">♥</button></div>
+
+      <!-- 카페 5개 -->
+      <div class="card"><img src="assets/images/cafe1.jpg" alt="폴트커피" class="card__image" />
+        <p class="card__title">폴트커피<br />좋아요 11개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/cafe2.jpg" alt="본지르르 성수점" class="card__image" />
+        <p class="card__title">본지르르 성수점<br />좋아요 9개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/cafe3.jpg" alt="이코복스커피 스튜디오 이태원점" class="card__image" />
+        <p class="card__title">이코복스커피 스튜디오 이태원점<br />좋아요 14개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/cafe4.jpg" alt="티틸 CAFE+BAR" class="card__image" />
+        <p class="card__title">티틸 CAFE+BAR<br />좋아요 8개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/cafe5.jpg" alt="카페그루비" class="card__image" />
+        <p class="card__title">카페그루비<br />좋아요 13개</p><button class="card__like">♥</button></div>
+    </section>
+
+    <!-- 식당 섹션 -->
+    <h2 id="section-food" class="section__title">식당</h2>
+    <section class="cards">
+      <div class="card"><img src="assets/images/restaurant1.jpg" alt="야상해" class="card__image" />
+        <p class="card__title">야상해<br />좋아요 7개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/restaurant2.jpg" alt="나리의집" class="card__image" />
+        <p class="card__title">나리의집<br />좋아요 9개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/restaurant3.jpg" alt="이가네양꼬치 성수직영점" class="card__image" />
+        <p class="card__title">이가네양꼬치 성수직영점<br />좋아요 12개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/restaurant4.jpg" alt="미아사거리 원조할매곱창" class="card__image" />
+        <p class="card__title">미아사거리 원조할매곱창<br />좋아요 8개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/restaurant5.jpg" alt="용산 삼계탕" class="card__image" />
+        <p class="card__title">용산 삼계탕<br />좋아요 10개</p><button class="card__like">♥</button></div>
+    </section>
+
+    <!-- 카페 섹션 -->
+    <h2 id="section-cafe" class="section__title">카페</h2>
+    <section class="cards">
+      <div class="card"><img src="assets/images/cafe1.jpg" alt="폴트커피" class="card__image" />
+        <p class="card__title">폴트커피<br />좋아요 11개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/cafe2.jpg" alt="본지르르 성수점" class="card__image" />
+        <p class="card__title">본지르르 성수점<br />좋아요 9개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/cafe3.jpg" alt="이코복스커피 스튜디오 이태원점" class="card__image" />
+        <p class="card__title">이코복스커피 스튜디오 이태원점<br />좋아요 14개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/cafe4.jpg" alt="티틸 CAFE+BAR" class="card__image" />
+        <p class="card__title">티틸 CAFE+BAR<br />좋아요 8개</p><button class="card__like">♥</button></div>
+      <div class="card"><img src="assets/images/cafe5.jpg" alt="카페그루비" class="card__image" />
+        <p class="card__title">카페그루비<br />좋아요 13개</p><button class="card__like">♥</button></div>
+    </section>
+
+  </main>
+
+  <section class="infinite-banner">
+    <div class="infinite-banner__track">
+      <!-- 첫 번째 이미지 그룹 -->
+      <div class="banner-group">
+        <img src="assets/images/restaurant1.jpg" alt="야상해" />
+        <img src="assets/images/restaurant2.jpg" alt="나리의집" />
+        <img src="assets/images/restaurant3.jpg" alt="이가네양꼬치" />
+        <img src="assets/images/restaurant4.jpg" alt="원조할매곱창" />
+        <img src="assets/images/restaurant5.jpg" alt="용산 삼계탕" />
+        <img src="assets/images/cafe1.jpg" alt="폴트커피" />
+        <img src="assets/images/cafe2.jpg" alt="본지르르" />
+        <img src="assets/images/cafe3.jpg" alt="이코복스커피" />
+        <img src="assets/images/cafe4.jpg" alt="티틸" />
+        <img src="assets/images/cafe5.jpg" alt="카페그루비" />
+      </div>
+      <!-- 두 번째 이미지 그룹 (반복) -->
+      <div class="banner-group">
+        <img src="assets/images/restaurant1.jpg" alt="야상해" />
+        <img src="assets/images/restaurant2.jpg" alt="나리의집" />
+        <img src="assets/images/restaurant3.jpg" alt="이가네양꼬치" />
+        <img src="assets/images/restaurant4.jpg" alt="원조할매곱창" />
+        <img src="assets/images/restaurant5.jpg" alt="용산 삼계탕" />
+        <img src="assets/images/cafe1.jpg" alt="폴트커피" />
+        <img src="assets/images/cafe2.jpg" alt="본지르르" />
+        <img src="assets/images/cafe3.jpg" alt="이코복스커피" />
+        <img src="assets/images/cafe4.jpg" alt="티틸" />
+        <img src="assets/images/cafe5.jpg" alt="카페그루비" />
+      </div>
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <p>© AT SOPT WEB 1주차 과제<br>맛집 탐방</p>
+  </footer>
+
+</body>
+</html>
