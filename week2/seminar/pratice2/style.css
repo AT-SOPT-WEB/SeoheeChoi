@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+  }
+  
+  .todo-input {
+    padding: 5px;
+  }
+  
+  .add-btn {
+    padding: 5px 10px;
+  }
+  
+  .todo-list {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .todo-list li {
+    margin-bottom: 5px;
+  }
+  
