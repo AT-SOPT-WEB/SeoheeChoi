@@ -64,10 +64,9 @@
   grid-column: 4;
 }
 
-/* 반응형 디자인 추가 */
 @media (max-width: 768px) {
   .intro,
   .top-grid-wrapper {
-    margin-left: 16px; /* 작은 화면에서는 좌측 여백을 줄임 */
+    margin-left: 16px; 
   }
 }
