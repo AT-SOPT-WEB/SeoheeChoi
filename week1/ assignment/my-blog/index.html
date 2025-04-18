@@ -43,22 +43,23 @@
     <p class="intro__desc">제가 다녀온 맛집과 카페들을 추천해드릴게요!</p>
   </section>
 
-<!-- 홈 상단 섹션 -->
-<div class="top-grid-wrapper">
-  <section class="top-grid">
-    <div class="item item1"><img src="assets/images/top1.jpg" alt="top1" /></div>
-    <div class="item item2"><img src="assets/images/top2.jpg" alt="top2" /></div>
-    <div class="item item3"><img src="assets/images/top3.jpg" alt="top3" /></div>
-    <div class="item item4"><img src="assets/images/top4.jpg" alt="top4" /></div>
-    <div class="item item5"><img src="assets/images/top5.jpg" alt="top5" /></div>
-  </section>
-</div>
+  <!-- 홈 상단 섹션 -->
+  <div class="top-grid-wrapper">
+    <section class="top-grid">
+      <div class="item item1"><img src="assets/images/top1.jpg" alt="top1" /></div>
+      <div class="item item2"><img src="assets/images/top2.jpg" alt="top2" /></div>
+      <div class="item item3"><img src="assets/images/top3.jpg" alt="top3" /></div>
+      <div class="item item4"><img src="assets/images/top4.jpg" alt="top4" /></div>
+      <div class="item item5"><img src="assets/images/top5.jpg" alt="top5" /></div>
+    </section>
+  </div>
 
-    
+  <!-- 메인 콘텐츠 시작 -->
+  <main>
     <!-- 전체 섹션 -->
     <h2 id="section-all" class="section__title">전체</h2>
     <section class="cards">
-      <!-- 식당 5개 -->
+      <!-- 식당 -->
       <div class="card"><img src="assets/images/restaurant1.jpg" alt="야상해" class="card__image" />
         <p class="card__title">야상해<br />좋아요 7개</p><button class="card__like">♥</button></div>
       <div class="card"><img src="assets/images/restaurant2.jpg" alt="나리의집" class="card__image" />
@@ -70,7 +71,7 @@
       <div class="card"><img src="assets/images/restaurant5.jpg" alt="용산 삼계탕" class="card__image" />
         <p class="card__title">용산 삼계탕<br />좋아요 10개</p><button class="card__like">♥</button></div>
 
-      <!-- 카페 5개 -->
+      <!-- 카페 -->
       <div class="card"><img src="assets/images/cafe1.jpg" alt="폴트커피" class="card__image" />
         <p class="card__title">폴트커피<br />좋아요 11개</p><button class="card__like">♥</button></div>
       <div class="card"><img src="assets/images/cafe2.jpg" alt="본지르르 성수점" class="card__image" />
@@ -112,12 +113,11 @@
       <div class="card"><img src="assets/images/cafe5.jpg" alt="카페그루비" class="card__image" />
         <p class="card__title">카페그루비<br />좋아요 13개</p><button class="card__like">♥</button></div>
     </section>
-
   </main>
 
+  <!-- 무한 배너 -->
   <section class="infinite-banner">
     <div class="infinite-banner__track">
-      <!-- 첫 번째 이미지 그룹 -->
       <div class="banner-group">
         <img src="assets/images/restaurant1.jpg" alt="야상해" />
         <img src="assets/images/restaurant2.jpg" alt="나리의집" />
@@ -130,8 +130,8 @@
         <img src="assets/images/cafe4.jpg" alt="티틸" />
         <img src="assets/images/cafe5.jpg" alt="카페그루비" />
       </div>
-      <!-- 두 번째 이미지 그룹 (반복) -->
       <div class="banner-group">
+        <!-- 반복 -->
         <img src="assets/images/restaurant1.jpg" alt="야상해" />
         <img src="assets/images/restaurant2.jpg" alt="나리의집" />
         <img src="assets/images/restaurant3.jpg" alt="이가네양꼬치" />
@@ -145,8 +145,8 @@
       </div>
     </div>
   </section>
-  
 
+  <!-- 푸터 -->
   <footer class="footer">
     <p>© AT SOPT WEB 1주차 과제<br>맛집 탐방</p>
   </footer>
