@@ -89,4 +89,5 @@
 .like-checkbox:checked + .card__like {
   color: #ff7e5f;
   transform: scale(1.3);
+  transition: transform 0.2s ease, color 0.3s ease;
 }
