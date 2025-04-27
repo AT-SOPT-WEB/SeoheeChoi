@@ -1,0 +1,35 @@
+.infinite-banner {
+  overflow: hidden;
+  background: #111;
+  margin-left: 160px;
+  padding: 16px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  margin-top: 160px; 
+}
+
+.infinite-banner__track {
+  display: flex;
+  width: max-content;
+  animation: scroll-banner 30s linear infinite;
+}
+
+.banner-group {
+  display: flex;
+  gap: 24px;
+}
+
+.banner-group img {
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@keyframes scroll-banner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
