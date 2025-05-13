@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { signin } from "@/api/user";
+import { signin, getMyInfo } from "@/api/user";
 import { useAuthStore } from "@/store/auth";
 import Input from "@/components/common/Input";
 import Button from "@/components/common/Button";
@@ -11,16 +11,22 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const navigate = useNavigate();
-  const { setUserId } = useAuthStore(); 
+  const { setUserId, setNickname } = useAuthStore();
 
   const handleLogin = async () => {
     try {
       const res = await signin({ loginId, password });
-
       const userId = res?.data?.data?.userId;
       if (!userId) throw new Error("userId가 응답에 없습니다.");
 
+      // userId 저장
       setUserId(userId.toString());
+
+      // 닉네임 불러와서 저장
+      const profile = await getMyInfo();
+      setNickname(profile.data.data.nickname);
+
+      // 이동
       navigate("/mypage");
     } catch (err) {
       setError(getErrorMessage(err, "로그인에 실패했습니다"));

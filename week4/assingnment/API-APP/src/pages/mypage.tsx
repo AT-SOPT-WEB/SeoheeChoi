@@ -7,8 +7,8 @@ import Header from "@/components/layout/Header";
 import { getErrorMessage } from "@/utils/getErrorMessage";
 
 export default function MyPage() {
-  const { nickname, setNickname } = useAuthStore();
-  const [newNickname, setNewNickname] = useState(nickname ?? "");
+  const { setNickname } = useAuthStore();
+  const [newNickname, setNewNickname] = useState(""); 
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -16,21 +16,21 @@ export default function MyPage() {
       .then((res) => {
         const nickname = res.data?.nickname;
         if (nickname) {
-          setNickname(nickname);
-          setNewNickname(nickname); 
+          setNickname(nickname); 
         }
       })
       .catch(() => setError("유저 정보를 불러오지 못했습니다."));
   }, [setNickname]);
 
   const handleSave = async () => {
-    if (!newNickname) return;
+    if (!newNickname.trim()) return;
 
     try {
       await updateNickname(newNickname);
       setNickname(newNickname);
       alert("닉네임이 변경되었습니다");
       setError("");
+      setNewNickname(""); // ✅ 저장 후 입력 폼 비우기
     } catch (err) {
       const message = getErrorMessage(err, "닉네임 변경에 실패했습니다");
       setError(message);
@@ -48,8 +48,9 @@ export default function MyPage() {
             value={newNickname}
             onChange={(e) => setNewNickname(e.target.value)}
             error={error || undefined}
+            placeholder="변경할 닉네임을 입력하세요"
           />
-          <Button onClick={handleSave} disabled={!newNickname}>
+          <Button onClick={handleSave} disabled={!newNickname.trim()}>
             저장
           </Button>
         </div>

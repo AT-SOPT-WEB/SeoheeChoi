@@ -33,10 +33,9 @@ export default function Header() {
           isOpen ? "max-h-60 p-4 border-t" : "max-h-0"
         }`}
       >
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 items-center">
           <button onClick={() => navigate("/mypage")}>내 정보</button>
           <button onClick={() => navigate("/users")}>회원 조회</button>
-          <span className="text-sm text-gray-600">{nickname}</span>
           <button onClick={handleLogout} className="text-sm text-red-500">
             로그아웃
           </button>

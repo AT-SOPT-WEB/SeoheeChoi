@@ -5,7 +5,7 @@ import Header from "@/components/layout/Header";
 import Input from "@/components/common/Input";
 import Button from "@/components/common/Button";
 
-export default function UserListPage() {
+export default function UsersPage() {
   const [query, setQuery] = useState("");
   const [users, setUsers] = useState<string[]>([]);
   const [error, setError] = useState("");
