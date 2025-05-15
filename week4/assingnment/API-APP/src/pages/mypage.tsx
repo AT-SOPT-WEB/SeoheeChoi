@@ -30,7 +30,7 @@ export default function MyPage() {
       setNickname(newNickname);
       alert("닉네임이 변경되었습니다");
       setError("");
-      setNewNickname(""); // ✅ 저장 후 입력 폼 비우기
+      setNewNickname(""); 
     } catch (err) {
       const message = getErrorMessage(err, "닉네임 변경에 실패했습니다");
       setError(message);
