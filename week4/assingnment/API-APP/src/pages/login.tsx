@@ -19,14 +19,11 @@ export default function LoginPage() {
       const userId = res?.data?.data?.userId;
       if (!userId) throw new Error("userId가 응답에 없습니다.");
 
-      // userId 저장
       setUserId(userId.toString());
 
-      // 닉네임 불러와서 저장
       const profile = await getMyInfo();
       setNickname(profile.data.data.nickname);
 
-      // 이동
       navigate("/mypage");
     } catch (err) {
       setError(getErrorMessage(err, "로그인에 실패했습니다"));
